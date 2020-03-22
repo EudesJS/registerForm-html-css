@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/style.css">
+  <title>Registration Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+    <h1>event registration form</h1>
+    <form action="">
+      <section class="fullName">
+        <span>Name</span>
+          <label for="name"><input type="text" name="nome" id="nome" required><br>First Name</label>
+          <label for="name"><input type="text" name="sobrenome" id="sobrenome" required><br>Last Name</label>
+        </section>
+      <section>
+        <span>Company</span>
+        <input type="text" name="company" id="company" required>
+      </section>
+      <section>
+        <span>Email</span>
+        <input type="email" name="email" id="email" placeholder="example@email.com" required> 
+      </section>
+      <section class="phone">
+          <span>Phone</span>
+          <label><input type="number" name="areacode" id="areacode" min="11" max="99" required><br>Area Code</label>
+          <label><input type="text" name="telefone" id="telefone" required><br>Phone Number</label>
+      </section>
+      <section class="subject">
+      <label for="subject">Subject</label>
+      <select name="subject" id="subject">
+        <option value="" disabled selected>Choose option</option>
+        <option value="Subject1">Subject1</option>
+        <option value="Subject2">Subject2</option>
+        <option value="Subject3">Subject3</option>
+      </select>
+    </section>
+      <section class="yes_no">
+        <p><label for="yes_no_radio">Are you an existing customer?</label></p>
+        <p>
+          <label class="radio">
+            <input type="radio" name="radio" checked>
+            <span class="checkmark"></span>
+            Yes
+          </label>
+          <label class="radio">
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+            No
+          </label>
+        </p>
+    </section>
+      <input type="submit" value="REGISTER">
+    </form>
+  </div>
+  </div>
+</body>
+</html>
